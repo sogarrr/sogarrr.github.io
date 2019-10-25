@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <title>BLACKPINK</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- iconnya nich -->
+    <link href="img/bplogo.png" rel="icon">
+    <link href="img/bplogo.png" rel="apple-touch-icon">
+
+    <!-- Google Fontsnya -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS Filenya -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Filesnya -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet Filenya -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--/ Nav Star /-->
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+        <div class="container">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a class="navbar-brand text-brand" href="index.html">BLACK<span class="color-b">PINK</span></a>
+            <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="album.html">Album</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Ujung Navbar-->
+
+    <!--/ Judul gallery /-->
+    <section class="intro-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <div class="title-single-box">
+                        <h1 class="title-single">Gallery of Blackpink</h1>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Judul gallery /-->
+
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="img/grid1.jpg" style="width:100%">
+            <img src="img/grid2.jpg" style="width:100%">
+            <img src="img/grid3.jpg" style="width:100%">
+            <img src="img/grid4.jpg" style="width:100%">
+            <img src="img/grid20.jpg" style="width:100%">
+            <img src="img/grid27.jpg" style="width:100%">
+            <img src="img/grid28.jpg" style="width:100%">
+            <img src="img/grid7.jpg" style="width:100%">
+            <img src="img/grid31.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img/grid10.jpg" style="width:100%">
+            <img src="img/grid6.jpg" style="width:100%">
+            <img src="img/grid22.jpg" style="width:100%">
+            <img src="img/grid19.jpg" style="width:100%">
+            <img src="img/grid13.jpg" style="width:100%">
+            <img src="img/grid9.jpg" style="width:100%">
+            <img src="img/grid29.jpg" style="width:100%">
+            <img src="img/grid30.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img/grid15.jpg" style="width:100%">
+            <img src="img/grid27.jpg" style="width:100%">
+            <img src="img/grid16.jpg" style="width:100%">
+            <img src="img/grid14.jpg" style="width:100%">
+            <img src="img/grid24.jpg" style="width:100%">
+            <img src="img/grid17.jpg" style="width:100%">
+            <img src="img/grid8.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="img/grid26.jpg" style="width:100%">
+            <img src="img/grid25.jpg" style="width:100%">
+            <img src="img/grid12.jpg" style="width:100%">
+            <img src="img/grid11.jpg" style="width:100%">
+            <img src="img/grid18.jpg" style="width:100%">
+            <img src="img/grid21.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <!--Footer Awal-->
+    <section class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">BLACKPINK</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <p class="w-text-a color-text-a">
+                                Blackpink became the first female singer group to debut under YG Entertainment
+                                in six years after 2NE1, with their debut single titled Square One, which was released
+                                on August 8, 2016.
+                            </p>
+                        </div>
+                        <div class="w-footer-a">
+                            <ul class="list-unstyled">
+                                <li class="color-a">
+                                    <span class="color-text-a">Phone .</span> 012345678910</li>
+                                <li class="color-a">
+                                    <span class="color-text-a">Email .</span> ygentertaint@blackpink.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 section-md-t3">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">MEMBER</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <div class="w-body-a">
+                                <ul class="list-unstyled">
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="jennie.html"> Jennie Kim</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="lisa.html"> Lalisa Manoban</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="rose.html"> Roseanne Park</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="fa fa-angle-right"></i> <a href="jisoo.html"> Kim Ji Soo</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 section-md-t3">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">ALBUM</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <ul class="list-unstyled">
+                                <li class="item-list-a">
+                                    <i class="fa fa-angle-right"></i> <a href="album.html">Square One</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="fa fa-angle-right"></i> <a href="album.html">Square Two</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="fa fa-angle-right"></i> <a href="album.html">Square Up</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="fa fa-angle-right"></i> <a href="album.html">Kill This Love</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="nav-footer">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="album.html">Album</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright-footer">
+                        <p class="copyright color-text-a">
+                            &copy; Copyright
+                            <span class="color-a">BLACKPINK</span> All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="https://youtube.com/mrmodusproductions/">Mr. Modus Productions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ Footer End /-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+
+</body>
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/popper/popper.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/scrollreveal/scrollreveal.min.js"></script>
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
+
+<!-- Javascript Files -->
+<script src="js/main.js"></script>
+
+</html>
