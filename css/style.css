@@ -2018,3 +2018,13 @@ footer .credits {
   /* Gallery grid nya */
 
 }
+
+.position-select-box {
+  position: absolute;
+  left: 10%;
+}
+
+.ng-switch-when {
+  position: absolute;
+  top: 30%;
+}

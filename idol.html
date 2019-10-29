@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .position-select-box {
+        left: 10%;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <title>BLACKPINK</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- iconnya nih -->
+    <link href="img/bplogo.png" rel="icon">
+    <link href="img/bplogo.png" rel="apple-touch-icon">
+
+    <!-- Google Fontsnyaaa -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS Filenyaa -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Filesnyaa -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheetnyaa File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body ng-app="">
+
+    <!--/ Nav Star /-->
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+        <div class="container">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a class="navbar-brand text-brand" href="index.html">BLACK<span class="color-b">PINK</span></a>
+            <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="album.html">Album</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="idol.html">More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--/ Nav End /-->
+
+    <!--/ Intro Single star /-->
+    <section class="intro-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <div class="title-single-box">
+                        <h1 class="title-single">Our Amazing Properties</h1>
+                        <span class="color-text-a">Grid Properties</span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Properties Grid
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Intro Single End /-->
+
+    <div class="position-select-box">
+        <form>
+            Marchandise List:
+            <select ng-model="myVar">
+                <option value="album">Outfits
+                <option value="tuts">Tutorials
+                <option value="cars">Cars
+                <option value="cars">Cars
+            </select>
+        </form>
+        <div ng-switch="myVar">
+            <div ng-switch-when="album">
+                <br>
+
+                <h2>Blackpink Stuff</h2>
+                <section class="news-grid grid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-box-b card-shadow news-box">
+                                    <div class="img-box-b">
+                                        <img src="img/baju1.jpg" alt="" class="img-b img-fluid">
+                                    </div>
+                                    <div class="card-overlay">
+                                        <div class="card-header-b">
+                                            <div class="card-category-b">
+                                                <a class="category-b">T-Shirt</a>
+                                            </div>
+                                            <div class="card-title-b">
+                                                <h2 class="title-2">
+                                                    <a href="boombayah.html">Blackpink T-Shirt
+                                                        <br> </a>
+                                                </h2>
+                                            </div>
+                                            <div class="card-date">
+                                                <span class="date-b">$30.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card-box-b card-shadow news-box">
+                                    <div class="img-box-b">
+                                        <img src="img/baju2.jpg" alt="" class="img-b img-fluid">
+                                    </div>
+                                    <div class="card-overlay">
+                                        <div class="card-header-b">
+                                            <div class="card-category-b">
+                                                <a class="category-b">T-Shirt</a>
+                                            </div>
+                                            <div class="card-title-b">
+                                                <h2 class="title-2">
+                                                    <a href="whistle.html">In Your Area T-Shirt
+                                                        <br> </a>
+                                                </h2>
+                                            </div>
+                                            <div class="card-date">
+                                                <span class="date-b">$30.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div ng-switch-when="tuts">
+                <h1>Tutorials</h1>
+                <p>Learn from examples.</p>
+            </div>
+            <div ng-switch-when="cars">
+                <h1>Cars</h1>
+                <p>Read about cars.</p>
+            </div>
+        </div>
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/jquery/jquery-migrate.min.js"></script>
+        <script src="lib/popper/popper.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+        <!-- Contact Form JavaScript File -->
+        <script src="contactform/contactform.js"></script>
+
+        <!-- Template Main Javascript File -->
+        <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
