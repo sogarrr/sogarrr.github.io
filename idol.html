@@ -104,15 +104,16 @@
             <select ng-model="myVar">
                 <option value="">
                 <option value="clothing">Clothing
-                <option value="tuts">Tutorials
-                <option value="cars">Cars
+                <option value="stuff">Stuff
+                <option value="album">Album
             </select>
         </form>
 
         <div ng-switch="myVar">
             <div ng-switch-when="clothing">
+                <br>
                 <h1>Clothing</h1>
-                <table style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
+                <table class="cloth" style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
                     <thead>
                         <tr>
                             <th>NO</th>
@@ -125,9 +126,11 @@
                     <tbody></tbody>
                 </table>
             </div>
-            <div ng-switch-when="tuts">
-                <h1>Tutorials</h1>
-                <table style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
+            <div ng-switch-when="stuff">
+                <br>
+                <h1>Stuff</h1>
+                <p></p>
+                <table class="stufftbl" style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
                     <thead>
                         <tr>
                             <th>NO</th>
@@ -140,9 +143,22 @@
                     <tbody></tbody>
                 </table>
             </div>
-            <div ng-switch-when="cars">
-                <h1>Cars</h1>
+            <div ng-switch-when="album">
+                <br>
+                <h1>Album</h1>
                 <p>Read about cars.</p>
+                <table class="talbum" style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Telp</th>
+                            <th>Foto</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </div>
         </div>
         <!-- JavaScript Libraries -->
@@ -159,7 +175,37 @@
                     items.push("<td id='" + key + "' style='text-align:center'><img src='foto/" + val.foto + "' style='height:100px;'></td>");
                     items.push("</tr>");
                 });
-                $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table");
+                $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table.cloth");
+            });
+        </script>
+        <script>
+            $.getJSON("stuff.json", function (data) {
+                var items = [];
+                $.each(data, function (key, val) {
+                    items.push("<tr>");
+                    items.push("<td id='" + key + "'>" + val.id + "</td>");
+                    items.push("<td id='" + key + "'>" + val.nama + "</td>");
+                    items.push("<td id='" + key + "'>" + val.email + "</td>");
+                    items.push("<td id='" + key + "'>" + val.telp + "</td>");
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='foto/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("</tr>");
+                });
+                $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table.stufftbl");
+            });
+        </script>
+        <script>
+            $.getJSON("album.json", function (data) {
+                var items = [];
+                $.each(data, function (key, val) {
+                    items.push("<tr>");
+                    items.push("<td id='" + key + "'>" + val.id + "</td>");
+                    items.push("<td id='" + key + "'>" + val.nama + "</td>");
+                    items.push("<td id='" + key + "'>" + val.email + "</td>");
+                    items.push("<td id='" + key + "'>" + val.telp + "</td>");
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='foto/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("</tr>");
+                });
+                $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table.talbum");
             });
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
