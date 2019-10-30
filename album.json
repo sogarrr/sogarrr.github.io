@@ -3,6 +3,7 @@
         "id": "1",
         "albumname": "Square One",
         "desc": "Include BOOMBAYAH and WHISTLE",
+        "price": "$117,68",
         "stock": "-",
         "foto": "squareone.jpg"
     },
@@ -10,6 +11,7 @@
         "id": "2",
         "albumname": "Square Two",
         "desc": "Include PLAYING WITH FIRE, STAY, and AS IF IT'S YOUR LAST",
+        "price": "$120,68",
         "stock": "-",
         "foto": "squaretwo.jpg"
     },
@@ -17,6 +19,7 @@
         "id": "3",
         "albumname": "Square Up",
         "desc": "Include DDU DU DU, FOREVER YOUNG, REALLY, and SEE YOU LATER",
+        "price": "$125,68",
         "stock": "-",
         "foto": "squareup.jpg"
     },
@@ -24,6 +27,7 @@
         "id": "4",
         "albumname": "Kill This Love",
         "desc": "Include KILL THIS LOVE, DONT KNOW WHAT TO DO, and KICK IT",
+        "price": "$130,68",
         "stock": "-",
         "foto": "killlove.jpg"
     }
