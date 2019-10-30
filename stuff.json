@@ -1,10 +1,10 @@
 [
     {
         "id": "1",
-        "nama": "yopiiiiiii",
-        "email": "fachran.nazarullah@gmail.com",
-        "telp": "085214320808",
-        "foto": "img/baju1.jpg"
+        "stuff": "yopiiiiiii",
+        "desc": "fachran.nazarullah@gmail.com",
+        "stock": "085214320808",
+        "img": "baju2.jpg"
     },
     {
         "id": "2",

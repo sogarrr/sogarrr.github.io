@@ -179,10 +179,10 @@
                 $.each(data, function (key, val) {
                     items.push("<tr>");
                     items.push("<td id='" + key + "'>" + val.id + "</td>");
-                    items.push("<td id='" + key + "'>" + val.nama + "</td>");
-                    items.push("<td id='" + key + "'>" + val.email + "</td>");
-                    items.push("<td id='" + key + "'>" + val.telp + "</td>");
-                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("<td id='" + key + "'>" + val.stuff + "</td>");
+                    items.push("<td id='" + key + "'>" + val.desc + "</td>");
+                    items.push("<td id='" + key + "'>" + val.stock + "</td>");
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.img + "' style='height:100px;'></td>");
                     items.push("</tr>");
                 });
                 $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table.stufftbl");
