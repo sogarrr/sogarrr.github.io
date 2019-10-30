@@ -1,23 +1,30 @@
 [
     {
         "id": "1",
-        "nama": "Sogarrrrrr",
-        "email": "fachran.nazarullah@gmail.com",
-        "telp": "085214320808",
-        "foto": "img/baju1.jpg"
+        "albumname": "Square One",
+        "desc": "fachran.nazarullah@gmail.com",
+        "stock": "-",
+        "foto": "squareone.jpg"
     },
     {
         "id": "2",
-        "nama": "ragosssss",
-        "email": "aisyah.humairah31@gmail.com",
-        "telp": "-",
-        "foto": "Aisyah.png"
+        "albumname": "Square Two",
+        "desc": "aisyah.humairah31@gmail.com",
+        "stock": "-",
+        "foto": "squaretwo.jpg"
     },
     {
         "id": "3",
-        "nama": "Khalif Aqmar Bilal",
-        "email": "-",
-        "telp": "-",
-        "foto": "Bilal.png"
+        "albumname": "Square Up",
+        "desc": "-",
+        "stock": "-",
+        "foto": "squareup.jpg"
+    },
+    {
+        "id": "4",
+        "albumname": "Kill This Love",
+        "desc": "-",
+        "stock": "-",
+        "foto": "killlove.jpg"
     }
 ]

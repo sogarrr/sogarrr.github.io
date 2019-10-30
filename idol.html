@@ -118,8 +118,9 @@
                             <th>NO</th>
                             <th>Clothes Name</th>
                             <th>Description</th>
+                            <th>Price</th>
                             <th>Size</th>
-                            <th>Foto</th>
+                            <th>Photo</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -131,10 +132,11 @@
                     <thead>
                         <tr>
                             <th>NO</th>
-                            <th>Nama</th>
-                            <th>Email</th>
-                            <th>Telp</th>
-                            <th>Foto</th>
+                            <th>Stuff Type</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Photo</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -146,10 +148,11 @@
                     <thead>
                         <tr>
                             <th>NO</th>
-                            <th>Nama</th>
-                            <th>Email</th>
-                            <th>Telp</th>
-                            <th>Foto</th>
+                            <th>Album Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Photo</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -166,6 +169,7 @@
                     items.push("<td id='" + key + "'>" + val.id + "</td>");
                     items.push("<td id='" + key + "'>" + val.name + "</td>");
                     items.push("<td id='" + key + "'>" + val.desc + "</td>");
+                    items.push("<td id='" + key + "'>" + val.price + "</td>");
                     items.push("<td id='" + key + "'>" + val.size + "</td>");
                     items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.img + "' style='height:100px;'></td>");
                     items.push("</tr>");
@@ -181,6 +185,7 @@
                     items.push("<td id='" + key + "'>" + val.id + "</td>");
                     items.push("<td id='" + key + "'>" + val.stuff + "</td>");
                     items.push("<td id='" + key + "'>" + val.desc + "</td>");
+                    items.push("<td id='" + key + "'>" + val.price + "</td>");
                     items.push("<td id='" + key + "'>" + val.stock + "</td>");
                     items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.img + "' style='height:100px;'></td>");
                     items.push("</tr>");
@@ -194,10 +199,11 @@
                 $.each(data, function (key, val) {
                     items.push("<tr>");
                     items.push("<td id='" + key + "'>" + val.id + "</td>");
-                    items.push("<td id='" + key + "'>" + val.nama + "</td>");
-                    items.push("<td id='" + key + "'>" + val.email + "</td>");
-                    items.push("<td id='" + key + "'>" + val.telp + "</td>");
-                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.img + "' style='height:100px;'></td>");
+                    items.push("<td id='" + key + "'>" + val.albumname + "</td>");
+                    items.push("<td id='" + key + "'>" + val.desc + "</td>");
+                    items.push("<td id='" + key + "'>" + val.price + "</td>");
+                    items.push("<td id='" + key + "'>" + val.stock + "</td>");
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.foto + "' style='height:100px;'></td>");
                     items.push("</tr>");
                 });
                 $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table.albumtbl");
