@@ -3,24 +3,32 @@
         "id": "1",
         "name": "Blackpink Basic T-Shirt",
         "desc": "SOFT, BLACK 100% COTTON T-SHIRT WITH A LOGO OF BLACKPINK.",
-        "price": "$30.00",
+        "price": "$20.00",
         "size": "S, M, XL, XXL",
         "img": "baju1.jpg"
     },
     {
         "id": "2",
         "name": "In Your Area T-Shirt",
-        "desc": "aisyah.humairah31@gmail.com",
+        "desc": "SOFT, BLACK 100% COTTON T-SHIRT WITH AN IMAGE OF BLACKPINK ON THE FRONT AND TOUR DATES ON THE REVERSE.",
         "price": "$30.00",
         "size": "S, M, XL, XXL",
         "img": "baju2.jpg"
     },
     {
         "id": "3",
-        "name": "Khalif Aqmar Bilal",
-        "desc": "-",
-        "price": "$30.00",
-        "size": "-",
-        "img": "Bilal.png"
+        "name": "Kill This Love T-Shirt",
+        "desc": "SOFT, BLACK 100% COTTON T-SHIRT WITH AN IMAGE OF BLACKPINK KILL THIS LOVE ON THE FRONT AND TOUR DATES ON THE REVERSE.",
+        "price": "$40.00",
+        "size": "S, M, XL, XXL",
+        "img": "baju3.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Blackpink Long Sleeve",
+        "desc": "SOFT, BLACK 100% COTTON T-SHIRT WITH COLORFUL GOTHIC INSPIRED LOGO ON THE FRONT AND TOUR DATES ON THE REVERSE.",
+        "price": "$55.00",
+        "size": "S, M, XL, XXL",
+        "img": "baju5.jpg"
     }
 ]
