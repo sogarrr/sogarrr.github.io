@@ -113,82 +113,61 @@
                 <br>
 
                 <h2>Blackpink Stuff</h2>
-                <section class="news-grid grid">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card-box-b card-shadow news-box">
-                                    <div class="img-box-b">
-                                        <img src="img/baju1.jpg" alt="" class="img-b img-fluid">
-                                    </div>
-                                    <div class="card-overlay">
-                                        <div class="card-header-b">
-                                            <div class="card-category-b">
-                                                <a class="category-b">T-Shirt</a>
-                                            </div>
-                                            <div class="card-title-b">
-                                                <h2 class="title-2">
-                                                    <a href="boombayah.html">Blackpink T-Shirt
-                                                        <br> </a>
-                                                </h2>
-                                            </div>
-                                            <div class="card-date">
-                                                <span class="date-b">$30.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card-box-b card-shadow news-box">
-                                    <div class="img-box-b">
-                                        <img src="img/baju2.jpg" alt="" class="img-b img-fluid">
-                                    </div>
-                                    <div class="card-overlay">
-                                        <div class="card-header-b">
-                                            <div class="card-category-b">
-                                                <a class="category-b">T-Shirt</a>
-                                            </div>
-                                            <div class="card-title-b">
-                                                <h2 class="title-2">
-                                                    <a href="whistle.html">In Your Area T-Shirt
-                                                        <br> </a>
-                                                </h2>
-                                            </div>
-                                            <div class="card-date">
-                                                <span class="date-b">$30.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div ng-switch-when="tuts">
-                <h1>Tutorials</h1>
-                <p>Learn from examples.</p>
-            </div>
-            <div ng-switch-when="cars">
-                <h1>Cars</h1>
-                <p>Read about cars.</p>
+                <table style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Telp</th>
+                            <th>Foto</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </div>
         </div>
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-        <script src="lib/jquery/jquery.min.js"></script>
-        <script src="lib/jquery/jquery-migrate.min.js"></script>
-        <script src="lib/popper/popper.min.js"></script>
-        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/scrollreveal/scrollreveal.min.js"></script>
-        <!-- Contact Form JavaScript File -->
-        <script src="contactform/contactform.js"></script>
+</body>
+</div>
+<div ng-switch-when="tuts">
+    <h1>Tutorials</h1>
+    <p>Learn from examples.</p>
+</div>
+<div ng-switch-when="cars">
+    <h1>Cars</h1>
+    <p>Read about cars.</p>
+</div>
+</div>
+<!-- JavaScript Libraries -->
+<script src="jquery-3.4.1.js"></script>
+<script>
+    $.getJSON("data.json", function (data) {
+        var items = [];
+        $.each(data, function (key, val) {
+            items.push("<tr>");
+            items.push("<td id='" + key + "'>" + val.id + "</td>");
+            items.push("<td id='" + key + "'>" + val.nama + "</td>");
+            items.push("<td id='" + key + "'>" + val.email + "</td>");
+            items.push("<td id='" + key + "'>" + val.telp + "</td>");
+            items.push("<td id='" + key + "' style='text-align:center'><img src='foto/" + val.foto + "' style='height:100px;'></td>");
+            items.push("</tr>");
+        });
+        $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table");
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/popper/popper.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/scrollreveal/scrollreveal.min.js"></script>
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
 
-        <!-- Template Main Javascript File -->
-        <script src="js/main.js"></script>
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
 
 
 </body>
