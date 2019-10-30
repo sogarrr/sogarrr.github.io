@@ -197,7 +197,7 @@
                     items.push("<td id='" + key + "'>" + val.nama + "</td>");
                     items.push("<td id='" + key + "'>" + val.email + "</td>");
                     items.push("<td id='" + key + "'>" + val.telp + "</td>");
-                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.img + "' style='height:100px;'></td>");
                     items.push("</tr>");
                 });
                 $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table.albumtbl");
