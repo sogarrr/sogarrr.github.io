@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "name": "Blackpink Basic T-Shirt",
+        "name": "BLACKPINK Basic T-Shirt",
         "desc": "SOFT, BLACK 100% COTTON T-SHIRT WITH A LOGO OF BLACKPINK.",
         "price": "$20.00",
         "size": "S, M, XL, XXL",
@@ -9,7 +9,7 @@
     },
     {
         "id": "2",
-        "name": "In Your Area T-Shirt",
+        "name": "IN YOUR AREA T-Shirt",
         "desc": "SOFT, BLACK 100% COTTON T-SHIRT WITH AN IMAGE OF BLACKPINK ON THE FRONT AND TOUR DATES ON THE REVERSE.",
         "price": "$30.00",
         "size": "S, M, XL, XXL",
@@ -17,7 +17,7 @@
     },
     {
         "id": "3",
-        "name": "Kill This Love T-Shirt",
+        "name": "KILL THIS LOVE T-Shirt",
         "desc": "SOFT, BLACK 100% COTTON T-SHIRT WITH AN IMAGE OF BLACKPINK KILL THIS LOVE ON THE FRONT AND TOUR DATES ON THE REVERSE.",
         "price": "$40.00",
         "size": "S, M, XL, XXL",
@@ -25,7 +25,7 @@
     },
     {
         "id": "4",
-        "name": "Blackpink Long Sleeve",
+        "name": "BLACKPINK Long Sleeve",
         "desc": "SOFT, BLACK 100% COTTON T-SHIRT WITH COLORFUL GOTHIC INSPIRED LOGO ON THE FRONT AND TOUR DATES ON THE REVERSE.",
         "price": "$55.00",
         "size": "S, M, XL, XXL",

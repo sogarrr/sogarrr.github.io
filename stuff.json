@@ -1,23 +1,42 @@
 [
     {
         "id": "1",
-        "stuff": "yopiiiiiii",
-        "desc": "fachran.nazarullah@gmail.com",
-        "stock": "085214320808",
-        "img": "baju2.jpg"
+        "stuff": "BLACKPINK Official Lightstick",
+        "desc": "Official YG Entertainment Merchandise from YG Select: BLACKPINK Official Light Stick. This is must have merch for every BLINKs around the world. Lets make pink ocean in every BLACKPINK concert",
+        "price": "$45.00",
+        "stock": "-",
+        "img": "stuff3.jpg"
     },
     {
         "id": "2",
-        "nama": "Opiiiiiii",
-        "email": "aisyah.humairah31@gmail.com",
-        "telp": "-",
-        "foto": "Aisyah.png"
+        "stuff": "KRUNK x BLACKPINK Bunny Hat",
+        "desc": "Official YG Entertainment Goods and Merchandise from YG Select: KRUNK x BLACKPINK Action Bunny Line Hat.",
+        "price": "$42.00",
+        "stock": "-",
+        "img": "stuff4.jpg"
     },
     {
         "id": "3",
-        "nama": "Khalif Aqmar Bilal",
-        "email": "-",
-        "telp": "-",
-        "foto": "Bilal.png"
+        "stuff": "BLACKPINK Photobook Limited Edition",
+        "desc": "Official YG Entertainment Merchandise from YG Select: BLACKPINK PHOTOBOOK Limited Edition. Consists of HARD COVER PHOTO BOOK(184P) + POST CARD SET(4 sheets) + FOLDED POSTER",
+        "price": "$65.00",
+        "stock": "-",
+        "img": "stuff5.jpg"
+    },
+    {
+        "id": "4",
+        "stuff": "US Tour Collection: Dad Hat",
+        "desc": "Official Merch from Interscope Records and UMG: BLACKPINK In Your Area U.S. Tour Collection. BLACKPINK Official Dad Hat + Digital Album.",
+        "price": "$40.00",
+        "stock": "-",
+        "img": "stuff6.jpg"
+    },
+    {
+        "id": "5",
+        "stuff": "US Tour Collection: BLACKPINK Tote",
+        "desc": "Official Merch from Interscope Records and UMG: BLACKPINK In Your Area U.S. Tour Collection. BLACKPINK Tote Official Bag + Digital Album.",
+        "price": "$30.00",
+        "stock": "-",
+        "img": "stuff7.jpg"
     }
 ]
