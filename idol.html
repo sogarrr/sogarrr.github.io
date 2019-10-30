@@ -100,19 +100,18 @@
 
     <div class="position-select-box">
         <form>
-            Marchandise List:
+            Select a topic:
             <select ng-model="myVar">
-                <option value="album">Outfits
+                <option value="">
+                <option value="dogs">Dogs
                 <option value="tuts">Tutorials
-                <option value="cars">Cars
                 <option value="cars">Cars
             </select>
         </form>
-        <div ng-switch="myVar">
-            <div ng-switch-when="album">
-                <br>
 
-                <h2>Blackpink Stuff</h2>
+        <div ng-switch="myVar">
+            <div ng-switch-when="dogs">
+                <h1>Dogs</h1>
                 <table style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
                     <thead>
                         <tr>
@@ -126,48 +125,56 @@
                     <tbody></tbody>
                 </table>
             </div>
+            <div ng-switch-when="tuts">
+                <h1>Tutorials</h1>
+                <table style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Telp</th>
+                            <th>Foto</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div ng-switch-when="cars">
+                <h1>Cars</h1>
+                <p>Read about cars.</p>
+            </div>
         </div>
-</body>
-</div>
-<div ng-switch-when="tuts">
-    <h1>Tutorials</h1>
-    <p>Learn from examples.</p>
-</div>
-<div ng-switch-when="cars">
-    <h1>Cars</h1>
-    <p>Read about cars.</p>
-</div>
-</div>
-<!-- JavaScript Libraries -->
-<script src="jquery-3.4.1.js"></script>
-<script>
-    $.getJSON("data.json", function (data) {
-        var items = [];
-        $.each(data, function (key, val) {
-            items.push("<tr>");
-            items.push("<td id='" + key + "'>" + val.id + "</td>");
-            items.push("<td id='" + key + "'>" + val.nama + "</td>");
-            items.push("<td id='" + key + "'>" + val.email + "</td>");
-            items.push("<td id='" + key + "'>" + val.telp + "</td>");
-            items.push("<td id='" + key + "' style='text-align:center'><img src='foto/" + val.foto + "' style='height:100px;'></td>");
-            items.push("</tr>");
-        });
-        $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table");
-    });
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/jquery/jquery-migrate.min.js"></script>
-<script src="lib/popper/popper.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/scrollreveal/scrollreveal.min.js"></script>
-<!-- Contact Form JavaScript File -->
-<script src="contactform/contactform.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="jquery-3.4.1.js"></script>
+        <script>
+            $.getJSON("data.json", function (data) {
+                var items = [];
+                $.each(data, function (key, val) {
+                    items.push("<tr>");
+                    items.push("<td id='" + key + "'>" + val.id + "</td>");
+                    items.push("<td id='" + key + "'>" + val.nama + "</td>");
+                    items.push("<td id='" + key + "'>" + val.email + "</td>");
+                    items.push("<td id='" + key + "'>" + val.telp + "</td>");
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='foto/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("</tr>");
+                });
+                $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table");
+            });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/jquery/jquery-migrate.min.js"></script>
+        <script src="lib/popper/popper.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+        <!-- Contact Form JavaScript File -->
+        <script src="contactform/contactform.js"></script>
 
-<!-- Template Main Javascript File -->
-<script src="js/main.js"></script>
+        <!-- Template Main Javascript File -->
+        <script src="js/main.js"></script>
 
 
 </body>
