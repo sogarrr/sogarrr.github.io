@@ -1,10 +1,10 @@
 [
     {
         "id": "1",
-        "nama": "Fachran Nazarullah",
-        "email": "fachran.nazarullah@gmail.com",
-        "telp": "085214320808",
-        "foto": "img/baju1.jpg"
+        "name": "Blackpink Basic T-Shirt",
+        "desc": "SOFT, BLACK 100% COTTON T-SHIRT WITH A LOGO OF BLACKPINK.",
+        "size": "085214320808",
+        "img": "baju1.jpg"
     },
     {
         "id": "2",

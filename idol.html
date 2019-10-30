@@ -62,7 +62,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="idol.html">More</a>
                     </li>
                 </ul>
@@ -78,7 +78,7 @@
                 <div class="col-md-12 col-lg-8">
                     <div class="title-single-box">
                         <h1 class="title-single">Our Amazing Merchandise</h1>
-                        <span class="color-text-a">Grid Properties</span>
+                        <span class="color-text-a">Blackpink Merchandise</span>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-4">
@@ -116,9 +116,9 @@
                     <thead>
                         <tr>
                             <th>NO</th>
-                            <th>Nama</th>
-                            <th>Email</th>
-                            <th>Telp</th>
+                            <th>Clothes Name</th>
+                            <th>Description</th>
+                            <th>Size</th>
                             <th>Foto</th>
                         </tr>
                     </thead>
@@ -164,10 +164,10 @@
                 $.each(data, function (key, val) {
                     items.push("<tr>");
                     items.push("<td id='" + key + "'>" + val.id + "</td>");
-                    items.push("<td id='" + key + "'>" + val.nama + "</td>");
-                    items.push("<td id='" + key + "'>" + val.email + "</td>");
-                    items.push("<td id='" + key + "'>" + val.telp + "</td>");
-                    items.push("<td id='" + key + "' style='text-align:center'><img src='foto/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("<td id='" + key + "'>" + val.name + "</td>");
+                    items.push("<td id='" + key + "'>" + val.desc + "</td>");
+                    items.push("<td id='" + key + "'>" + val.size + "</td>");
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.img + "' style='height:100px;'></td>");
                     items.push("</tr>");
                 });
                 $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table.outfittbl");
@@ -182,7 +182,7 @@
                     items.push("<td id='" + key + "'>" + val.nama + "</td>");
                     items.push("<td id='" + key + "'>" + val.email + "</td>");
                     items.push("<td id='" + key + "'>" + val.telp + "</td>");
-                    items.push("<td id='" + key + "' style='text-align:center'><img src='foto/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.foto + "' style='height:100px;'></td>");
                     items.push("</tr>");
                 });
                 $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table.stufftbl");
@@ -197,7 +197,7 @@
                     items.push("<td id='" + key + "'>" + val.nama + "</td>");
                     items.push("<td id='" + key + "'>" + val.email + "</td>");
                     items.push("<td id='" + key + "'>" + val.telp + "</td>");
-                    items.push("<td id='" + key + "' style='text-align:center'><img src='foto/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.foto + "' style='height:100px;'></td>");
                     items.push("</tr>");
                 });
                 $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("table.albumtbl");
