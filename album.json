@@ -19,5 +19,12 @@
         "desc": "-",
         "stock": "-",
         "foto": "squareup.jpg"
+    },
+    {
+        "id": "4",
+        "albumname": "Kill This Love",
+        "desc": "-",
+        "stock": "-",
+        "foto": "killlove.jpg"
     }
 ]
