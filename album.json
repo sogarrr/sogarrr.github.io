@@ -2,28 +2,28 @@
     {
         "id": "1",
         "albumname": "Square One",
-        "desc": "fachran.nazarullah@gmail.com",
+        "desc": "Include BOOMBAYAH and WHISTLE",
         "stock": "-",
         "foto": "squareone.jpg"
     },
     {
         "id": "2",
         "albumname": "Square Two",
-        "desc": "aisyah.humairah31@gmail.com",
+        "desc": "Include PLAYING WITH FIRE, STAY, and AS IF IT'S YOUR LAST",
         "stock": "-",
         "foto": "squaretwo.jpg"
     },
     {
         "id": "3",
         "albumname": "Square Up",
-        "desc": "-",
+        "desc": "Include DDU DU DU, FOREVER YOUNG, REALLY, and SEE YOU LATER",
         "stock": "-",
         "foto": "squareup.jpg"
     },
     {
         "id": "4",
         "albumname": "Kill This Love",
-        "desc": "-",
+        "desc": "Include KILL THIS LOVE, DONT KNOW WHAT TO DO, and KICK IT",
         "stock": "-",
         "foto": "killlove.jpg"
     }
